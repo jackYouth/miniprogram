@@ -1,0 +1,9 @@
+<!--pages/waitUserItem.js/waitUserItem.wxml-->
+<view class='wait-user-item {{!avatarIcon && "no-user"}}'>
+  <view class='wait-user-item__icon'>
+    <image src='{{avatarIcon || "../../images/page_2_avatar.png"}}'></image>
+  </view>
+  <view class='wait-user-item__text'>
+    {{avatarIcon ? "已准备" : "等待中"}}
+  </view>
+</view>

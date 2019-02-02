@@ -215,7 +215,7 @@ Page({
     // 点击手势，更新选择是石头、剪刀还是布
     switchChoice(e) {
         if (!this.data.playing) return;
-        let myChoice = this.data.myChoice + 1;
+        let myChoice = this.data. myChoice+ 1;
         if (myChoice == 4) {
             myChoice = 1;
         }

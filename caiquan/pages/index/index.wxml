@@ -1,15 +1,42 @@
 <!--index.wxml-->
-<view>
-    <view class="page-top">
-        <text class="username">欢迎</text>
-        <text class="text-info">来到组队猜拳小游戏</text>
-        <view class="page-btn-wrap">
-            <button class="page-btn" bindtap="gotoGame">进入游戏</button>
-        </view>
+<view class='page-inner'>
+  <view class='page-title-img'>
+    <image src='../../images/title.png'></image>
+  </view>
+  <view class="game-rules">
+    <view class="rules-title">
+      <text>游戏规则</text>
     </view>
-    <!-- <view class="page-bottom">
-        <text class="qr-txt">分享二维码邀请好友结伴一起写小程序！</text>
-        <image src="../../images/qr.png" class="qr-img"></image>
-        <image src="../../images/logo.png" class="page-logo"></image>
-    </view> -->
+    <view class="rules-item">
+      <image src='../../images/gouqi.png'></image>
+      <text>移动底部枸杞篮，接住来自3000米青藏高原的纯净枸杞。</text>
+    </view>
+    <view class="rules-item">
+      <image src='../../images/gouqi.png'></image>
+      <text>在30‘’内，接到最高数量枸杞的玩家即可当场获得美域礼品一份。</text>
+    </view>
+    <view class="rules-item">
+      <image src='../../images/gouqi.png'></image>
+      <text>其余玩家可获得美域美酒一杯。</text>
+    </view>
+  </view>
+  <view class='trigger-wrapper'>
+    <view class='trigger-btn-container'>
+      <scroll-view class='trigger-btn-inner' bindtouchstart='handleTouchstart' bindtouchend='handleTouchend' bindtouchmove='handleTouchmove' bindtap='handleWindowTap'>
+        <image style='left: {{triggerLeft + "px"}}' class='trigger-btn' src='../../images/gouqi.png'></image>
+      </scroll-view>
+    </view>
+    <view class='trigger-tips'>
+      <view class='trigger-tips__img-list'>
+        <image class='trigger-tips__img' src='../../images/page_1_arrow.png'></image>
+        <image class='trigger-tips__img' src='../../images/page_1_arrow.png'></image>
+        <image class='trigger-tips__img' src='../../images/page_1_arrow.png'></image>
+      </view>
+      <text class='trigger-tips__text'>滑动邀约小伙伴一起捕“杞”来！</text>
+    </view>
+    <image class='trigger-guolan' src='../../images/guolan_1.png'></image>
+  </view>
+  <view class='bottom-tips'>
+    <text>乐享美酒需理性 酒精度29%</text>
+  </view>
 </view>

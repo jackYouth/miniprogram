@@ -1,0 +1,67 @@
+/* pages/game/game.wxss */
+
+.page-innber {
+  background: rgba(0, 0, 0, 0.3) url(../../images/bg_1.jpg) center center no-repeat;
+}
+
+.title-img {
+  margin: 0 auto 22rpx;
+  width: 597rpx;
+  height: 195rpx;
+}
+
+.title-img image {
+  width: 100%;
+  height: 100%;
+}
+
+.wait-game-main {
+  padding: 0 97rpx 0 87rpx;
+}
+
+.wait-game-invite-text {
+  margin: 30px auto 0;
+   line-height: 97rpx; 
+  width: 400rpx;
+  border-radius: 24px;
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  background: #a7131f;
+  border: 2rpx solid #fff;
+}
+
+.invite {
+}
+
+.invite-code {
+  width: 566rpx;
+  height: 566rpx;
+  margin: 30rpx auto 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 2rpx solid #fff;
+  border-radius: 5px;
+  background: #a7131f;
+}
+.invite-code-inner {
+  padding: 30rpx;
+  width: 446rpx;
+  height: 446rpx;
+  border-radius: 5px;
+  background: #fff;
+}
+.invite-code image {
+  width: 100%;
+  height: 100%;
+}
+
+.invite-text {
+  width: 370rpx;
+  font-size: 14px;
+   line-height: 18px; 
+  color: #fff;
+  text-align: center;
+  margin: 0 auto;
+}

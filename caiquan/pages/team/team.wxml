@@ -1,0 +1,23 @@
+<!--pages/game/game.wxml-->
+<view class='page-inner'>
+  <view class='title-img'>
+    <image src='../../images/title.png'></image>
+  </view>
+  <view class='wait-game-main'>
+    <WaitUserItem avatarIcon='{{firstUserInfo.avatar}}' />
+    <view wx:if='{{showInviteCode}}'  class='wait-game-bottom invite'>
+      <view class='invite-code'>
+        <view class='invite-code-inner'>
+          <image src='{{inviteCode}}'></image>
+        </view>
+      </view>
+      <view class='invite-text'>让同桌的好友微信扫一扫一起加入游戏吧</view>
+    </view>
+    <view wx:else class='wait-game-bottom'>
+      <block wx:for='{{otherUserInfoList}}' wx:key='item.avatar'>
+        <WaitUserItem avatarIcon='{{item.avatar}}' />
+      </block>
+      <view class='wait-game-invite-text'>邀请同桌好友</view>
+    </view>
+  </view>
+</view>
